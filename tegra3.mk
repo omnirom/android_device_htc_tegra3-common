@@ -124,7 +124,12 @@ PRODUCT_PACKAGES += \
 # Other apps
 PRODUCT_PACKAGES += \
     Torch \
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory \
+    Tegra3Parts 
+
+PRODUCT_PACKAGES += \
+    hostapd_cli \
+    calibrator
 
 # Video
 PRODUCT_PACKAGES += \
