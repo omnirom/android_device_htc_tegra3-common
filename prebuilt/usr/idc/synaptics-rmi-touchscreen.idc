@@ -54,4 +54,4 @@ touch.size.calibration = normalized
 # Orientation
 touch.orientation.calibration = vector
 
-keyboard.layout = qwerty
+keyboard.layout = tegra-kbc
