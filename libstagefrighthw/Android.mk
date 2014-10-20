@@ -15,7 +15,9 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-include $(CLEAR_VARS)
+ifneq ($(filter endeavoru enrc2b,$(TARGET_DEVICE)),)
+    include $(CLEAR_VARS)
+endif
 
 LOCAL_SRC_FILES := \
     NVOMXPlugin.cpp
