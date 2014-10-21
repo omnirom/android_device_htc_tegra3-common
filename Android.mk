@@ -13,12 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifneq ($(filter enrc2b,$(TARGET_DEVICE)),)
+
 LOCAL_PATH := $(call my-dir)
-
-ifeq ($(TARGET_BOARD_PLATFORM),tegra)
-
-tegra3_dirs := camera iw liblights libstagefrighthw ril
-
-include $(call all-named-subdir-makefiles,$(tegra_dirs))
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 endif
