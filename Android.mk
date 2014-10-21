@@ -15,6 +15,10 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter endeavoru enrc2b,$(TARGET_DEVICE)),)
-    include $(call first-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_BOARD_PLATFORM),tegra)
+
+tegra3_dirs := camera iw liblights libstagefrighthw ril
+
+include $(call all-named-subdir-makefiles,$(tegra_dirs))
+
 endif
