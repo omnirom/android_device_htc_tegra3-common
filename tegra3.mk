@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
-
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc \
@@ -123,8 +122,7 @@ PRODUCT_PACKAGES += \
 # Other apps
 PRODUCT_PACKAGES += \
     Torch \
-    com.android.future.usb.accessory \
-    Tegra3Parts
+    com.android.future.usb.accessory
 
 PRODUCT_PACKAGES += \
     hostapd_cli \

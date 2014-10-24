@@ -37,17 +37,6 @@ on post-fs-data
     symlink /data/cam_calib/camera_overrides_front.isp /data/camera_overrides_front.isp
 
 on boot
-    # Hardware tunables
-
-    # Vibrator intensity
-    chown root system /sys/class/timed_output/vibrator/dutycycle
-    chmod 0664 /sys/class/timed_output/vibrator/dutycycle
-    restorecon /sys/class/timed_output/vibrator/dutycycle
-
-    # Button backlight
-    chown root system /sys/class/leds/button-backlight/button_brightness
-    chmod 0664 /sys/class/leds/button-backlight/button_brightness
-    restorecon /sys/class/leds/button-backlight/button_brightness
 
 # HTC RIL daemon. Name changed so it doesn't clash with ril-daemon defined in init.rc
 service htc-ril-daemon /system/bin/rild
