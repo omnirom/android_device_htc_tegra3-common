@@ -3,11 +3,6 @@ on init
     stop ril-daemon
 
 on early-init
-    # Adaptive backlight (surfaceflinger Uid: system, Gid: graphics)
-    chown system system /sys/devices/tegradc.0/smartdimmer/enable
-    chmod 0664 /sys/devices/tegradc.0/smartdimmer/enable
-    restorecon /sys/devices/tegradc.0/smartdimmer/enable
-
     # NV audio blob
     chown media system /sys/power/suspend/mode
     chmod 0664 /sys/power/suspend/mode
