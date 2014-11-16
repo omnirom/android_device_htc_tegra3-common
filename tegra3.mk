@@ -132,9 +132,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefrighthw
 
-# iw
+# Wifi
 PRODUCT_PACKAGES += \
-    iw
+    iw \
+    libwpa_client \
+    hostapd \
+    dhcpcd.conf \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 # Configs
 PRODUCT_COPY_FILES += \
